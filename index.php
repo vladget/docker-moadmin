@@ -33,7 +33,7 @@ define('THEME', 'trontastic');
  * mongodb://[username:password@]host1[:port1][,host2[:port2:],...]
  * If you do not know what this means then it is not relevant to your application and you can safely leave it as-is
  */
-define('MONGO_CONNECTION', '');
+define('MONGO_CONNECTION', getenv('MONGO_CONNECTION'));
 
 /**
  * Set to true when connecting to a Mongo replicaSet
